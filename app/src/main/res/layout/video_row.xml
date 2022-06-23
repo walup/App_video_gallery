@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/video_row_layout"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:orientation="horizontal"
+        android:paddingTop="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight = "1"
+            >
+
+            <com.example.mricinema3.VideoImage
+                android:id="@+id/video_1"
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:contentDescription="Video 1"
+                android:layout_weight = "1"
+                />
+
+            <TextView
+                android:id="@+id/text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_weight = "0.2"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight = "1"
+            >
+
+            <com.example.mricinema3.VideoImage
+                android:id="@+id/video_2"
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:contentDescription="Video 2"
+                android:layout_weight = "1"
+                />
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:layout_weight = "0.2"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130sp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight = "1"
+            >
+
+            <com.example.mricinema3.VideoImage
+                android:id="@+id/video_3"
+                android:layout_width="match_parent"
+                android:layout_height="110sp"
+                android:contentDescription="Video 3"
+                android:layout_weight = "0.8"
+                />
+
+            <TextView
+                android:id="@+id/text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:visibility="visible"
+                android:layout_weight = "0.2"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
